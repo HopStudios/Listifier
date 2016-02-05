@@ -3,7 +3,7 @@
 /*
 ==========================================================
 	This software package is intended for use with 
-	ExpressionEngine.	ExpressionEngine is Copyright © 
+	ExpressionEngine.	ExpressionEngine is Copyright ï¿½ 
 	2002-2009 EllisLab, Inc. 
 	http://ellislab.com/
 ==========================================================
@@ -47,21 +47,20 @@ class Listifier {
 	function Listifier()
 	{
 		// Define stuff
-		global $TMPL;
 		$text = "";
 
 		// Fetch parameters
-		$text = $TMPL->tagdata;
+		$text = ee()->TMPL->tagdata;
 		
-		$separator = ($TMPL->fetch_param('separator')) ? $TMPL->fetch_param('separator') : "\n";
+		$separator = (ee()->TMPL->fetch_param('separator')) ? ee()->TMPL->fetch_param('separator') : "\n";
 
 		// put in li tags between each item
-		$TMPL->tagdata = str_replace($separator, "</li>\n<li>" , $TMPL->tagdata);
+		$text = str_replace($separator, "</li>\n<li>" , $text);
 		// and at the beginning and end
-		$TMPL->tagdata = "<li>" . $TMPL->tagdata . "</li>";
+		$text = "<li>" . $text . "</li>";
 		
 		// Return it
-		$this->return_data =  $TMPL->tagdata;
+		$this->return_data =  $text;
 	}
 		 
 		
