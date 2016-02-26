@@ -4,7 +4,7 @@ Have you ever wanted to create lists automatically from a custom ExpressionEngin
 
 ## Usage
 
-Listifier only adds <li> tags; you must add your own <ol> or <ul> tags in the template.
+Listifier only adds `<li>` tags; you must add your own `<ol>` or `<ul>` tags in the template.
 
 ### `{exp:listifier}` tag pair
 
