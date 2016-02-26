@@ -1,16 +1,38 @@
-#Listifier
+# Listifier
 
 Have you ever wanted to create lists automatically from a custom ExpressionEngine entry field?  You need Listifier.  It takes any block of text containing standard delimiters (such as newlines) and adds list tags.  Now your custom fields are even more powerful!
 
-If you want to use it, please buy it. :) [Devot-ee](http://devot-ee.com/add-ons/listifier/)
+## Usage
 
-[More information, how to use...](ee3/system/user/addons/listifier/README.md)
+### `{exp:listifier}` tag pair
 
-Want more ?
-===========
-Take a look at our [ExpressionEngine Add-Ons](http://www.hopstudios.com/software)
+#### Examples
 
-##License
+```
+{exp:listifier separator=","}
+	list item 1, list item 2, list item 3
+{/exp:listifier}
+```
+
+```
+{exp:listifier}
+	{custom_entry_field_containing_list_data_separated_by_newlines}
+{/exp:listifier}  
+```
+
+#### Parameters
+
+- `separator=","` If not set, the default separator is a carriage return "\n"
+
+## Changelog
+
+### 1.0.0
+
+Initial release
+
+
+## Licence
+
 Updated: Jan. 6, 2009
 
 ####Permitted Use
