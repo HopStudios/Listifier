@@ -4,6 +4,8 @@ Have you ever wanted to create lists automatically from a custom ExpressionEngin
 
 ## Usage
 
+Listifier only adds <li> tags; you must add your own <ol> or <ul> tags in the template.
+
 ### `{exp:listifier}` tag pair
 
 #### Examples
@@ -22,7 +24,7 @@ Have you ever wanted to create lists automatically from a custom ExpressionEngin
 
 #### Parameters
 
-- `separator=","` If not set, the default separator is a carriage return "\n"
+- `separator=","` If not set, the default separator is a newline "\n"
 
 ## Changelog
 
