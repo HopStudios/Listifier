@@ -26,6 +26,12 @@ Listifier only adds `<li>` tags; you must add your own `<ol>` or `<ul>` tags in 
 
 - `separator=","` If not set, the default separator is a newline "\n"
 
+
+## Support
+
+Having issues ? Found a bug ? Suggestions ? Contact us at [tech@hopstudios.com](mailto:tech@hopstudios.com)
+
+
 ## Changelog
 
 ### 1.0.0
