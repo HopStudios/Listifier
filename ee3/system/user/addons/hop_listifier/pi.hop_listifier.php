@@ -26,17 +26,10 @@
 ==========================================================
 */
 
-$plugin_info = array(
-						'pi_name'			=> 'Listifier',
-						'pi_version'		=> '1.0',
-						'pi_author'			=> 'Travis Smith',
-						'pi_author_url'		=> 'http://www.hopstudios.com/software/',
-						'pi_description'	=> 'Makes a block of text into list items',
-						'pi_usage'			=> Listifier::usage()
-					);
+require_once PATH_THIRD.'hop_listifier/config.php';
 
 
-class Listifier {
+class Hop_listifier {
 	
 	var $return_data;
 	
@@ -44,7 +37,7 @@ class Listifier {
 	//  Constructor
 	// ----------------------------------------
 	
-	function Listifier()
+	function __construct()
 	{
 		// Define stuff
 		$text = "";
@@ -60,39 +53,8 @@ class Listifier {
 		$text = "<li>" . $text . "</li>";
 		
 		// Return it
-		$this->return_data =  $text;
+		$this->return_data = $text;
 	}
-		 
-		
-	// ----------------------------------------
-	//  Plugin Usage
-	// ----------------------------------------
-	
-	// This function describes how the plugin is used.
-	// Make sure and use output buffering
-	
-	function usage()
-	{
-	ob_start(); 
-?>
-To use this plugin, wrap the block of text you want to be processed by it between these tag pairs:
-
-{exp:listifier separator=","}
-
-:replace me:
-
-{/exp:listifier}
-
-Please see <a href="http://www.hopstudios.com/software/">http://www.hopstudios.com/software/</a> for additional documentation.</p>
-
-<?php
-	$buffer = ob_get_contents();
-		
-	ob_end_clean(); 
-	
-	return $buffer;
-	}
-	// END
 
 }
 ?>
