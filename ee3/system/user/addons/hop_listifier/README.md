@@ -6,20 +6,20 @@ Have you ever wanted to create lists automatically from a custom ExpressionEngin
 
 Listifier only adds `<li>` tags; you must add your own `<ol>` or `<ul>` tags in the template.
 
-### `{exp:listifier}` tag pair
+### `{exp:hop_listifier}` tag pair
 
 #### Examples
 
 ```
-{exp:listifier separator=","}
+{exp:hop_listifier separator=","}
 	list item 1, list item 2, list item 3
-{/exp:listifier}
+{/exp:hop_listifier}
 ```
 
 ```
-{exp:listifier}
+{exp:hop_listifier}
 	{custom_entry_field_containing_list_data_separated_by_newlines}
-{/exp:listifier}  
+{/exp:hop_listifier}  
 ```
 
 #### Parameters
