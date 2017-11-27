@@ -6,7 +6,7 @@ If you want to use it, please buy it. :) [Devot-ee](http://devot-ee.com/add-ons/
 
 ## Documentation
 
-[More information, how to use...](ee3/system/user/addons/listifier/README.md)
+[More information, how to use...](ee3x-4x/system/user/addons/listifier/README.md)
 
 ## Want more ?
 
