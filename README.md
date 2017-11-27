@@ -4,10 +4,12 @@ Have you ever wanted to create lists automatically from a custom ExpressionEngin
 
 If you want to use it, please buy it. :) [Devot-ee](http://devot-ee.com/add-ons/listifier/)
 
+## Documentation
+
 [More information, how to use...](ee3/system/user/addons/listifier/README.md)
 
-Want more ?
-===========
+## Want more ?
+
 Take a look at our [ExpressionEngine Add-Ons](http://www.hopstudios.com/software)
 
 ## License
